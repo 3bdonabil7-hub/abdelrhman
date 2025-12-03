@@ -32,7 +32,7 @@ const translations = {
     skillsTitle: "المهارات",
     skillsValue: "لا يوجد",
     contactTitle: "اكتب رسالتك",
-    contactMuted: "اكتب رسالة وسيتم إرسالها إلى بوت التليجرام.",
+    contactMuted: "اكتب رسالة وسيتم إرسالها إلى عبد الرحمن نبيل.",
     senderLabel: "اسم المرسل (اختياري)",
     messageLabel: "الرسالة",
     sendBtn: "إرسال",
