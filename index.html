@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abdelrhman Nabil — Portfolio</title>
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header animate" data-delay="0.05">
+    <!-- <h1 class="logo">Abdelrhman <span class="gold-box">Nabil</span></h1> -->
+
+    <div class="header-controls">
+      <div class="lang-switch">
+        <button id="langToggle" aria-label="Switch language">EN | AR</button>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- HERO -->
+    <section class="hero card animate" data-delay="0.1">
+      <div class="left">
+        <p class="badge" data-i18n="badge">Student — Faculty of Agricultural Engineering</p>
+
+        <h2 class="title" data-i18n="title"><strong>Abdelrhman Nabil</strong></h2>
+
+        <p class="about" data-i18n="about">
+          A student interested in agriculture and modern agricultural technologies.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" id="downloadCv" href="#" data-i18n="downloadCv">Download CV</a>
+        </div>
+
+        <div class="info">
+          <p><strong data-i18n="locationLabel">Location:</strong> <span data-i18n="locationValue">(Ashmoun)</span></p>
+        </div>
+
+        <!-- social icons (colored, bigger) -->
+        <div class="socials">
+          <!-- <a class="social insta" href="#" id="insta" aria-label="Instagram"><i class="fab fa-instagram"></i></a> -->
+          <a class="social whats" href="https://wa.me/201098540553" id="whats" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+          <a class="social face" href="https://www.facebook.com/abdelrhman.nabil.768972" id="face" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <!-- <a class="social linkd" href="#" id="linkd" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+        </div>
+      </div>
+
+      <aside class="right">
+        <div class="photo-wrap">
+          <img id="profileImage" src="abdelrhman.jpg" alt="Profile photo">
+        </div>
+
+        <div class="contact-mini">
+          <div><strong data-i18n="emailLabel">EMAIL:</strong> <span id="email">3bdelrhman.nl@gmail.com</span></div>
+          <div><strong data-i18n="phoneLabel">Phone:</strong> <span id="phone">+20-1098540553</span></div>
+        </div>
+
+        <div class="skills-box card-box animate" data-delay="0.15">
+          <h4 data-i18n="skillsTitle">Skills</h4>
+          <div class="chips"><span data-i18n="skillsValue">Nothing</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- CONTACT FORM: placed LAST -->
+    <section id="contact" class="card contact-section animate" data-delay="0.25">
+      <h3 data-i18n="contactTitle">Write your message</h3>
+      <p class="muted" data-i18n="contactMuted">Type a message and it will be sent to Abdelrhman Nabil</p>
+
+      <form id="tgForm" class="tg-form" novalidate>
+        <label for="senderName" class="sr-only" data-i18n="senderLabel">Sender name (optional)</label>
+        <input type="text" id="senderName" placeholder="Your name (optional)">
+
+        <label for="messageText" class="sr-only" data-i18n="messageLabel">Message</label>
+        <textarea id="messageText" placeholder="Type your message..." required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="tg-send">
+            <i class="fab fa-telegram-plane"></i>
+            <span data-i18n="sendBtn">Send</span>
+          </button>
+        </div>
+
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer muted animate" data-delay="0.3">
+    © <span id="year"></span> <span data-i18n="footerName">Abdelrhman Nabil</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
