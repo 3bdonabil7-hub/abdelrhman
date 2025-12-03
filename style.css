@@ -17,6 +17,10 @@
    font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
+:lang(en) {
+   font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
 /* reset */
 *{box-sizing:border-box}
 html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif}
