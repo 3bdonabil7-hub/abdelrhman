@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Abdelrhman" content="مشروع بنجربه لسا وهنشوف اي الدنيا ">
+    <title>Abdelrhman Nabil</title>
+   <link rel="stylesheet" href="../css/hmde.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap" rel="stylesheet">
+<script src="../mad.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- بدايه المقدمه -->
+    <header class="header" id="about">
+        <!-- بدايه ناف  -->
+        <nav class="navbar">
+           <div class="logo">
+Abdelrhman Nabil
+           </div>
+           <!-- نهايه ناف  -->
+
+            <div class="nav">
+
+             <ul>
+                <li> <a href="#about">about us </a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact us</a></li>
+            </ul>
+
+           </div>
+        </nav>
+        <!-- نهايه ناف  -->
+         <!-- بدا عنا -->
+ <div class="about">
+
+    <div class="avatar">
+        <img src="../img/abdelrhman.jpg" alt="Abdelrhman Nabil">
+    </div>
+    <div class="text">
+        <h1> Abdelrhman Nabil
+        </h1>
+        <h2> <span>Quote form arcne </span>  <br>This pain you feel will either kill you, or make you a great person</h2>
+        <h3><span>Quote form the bad guys</span>  <br>You think if you act nice and follow the rules, they’ll like you <br> My advice <br> Stop pleasing people… and enjoy the lollipop.</h3>
+        <!-- <h4>ابدأ اليوم بخطوة صغيرة، فهي بداية الطريق الكبير نحو حلمك</h4> -->
+        <!-- facebook -->
+        <a target="_blank" href="https://www.facebook.com/abdelrhman.nabil.768972" class="fb"><i class="fab fa-facebook"></i></i></a>
+        <!-- whatsapp -->
+        <a target="_blank" href="https://wa.me/201098540553" class="wa"><i class="fa-brands fa-square-whatsapp"></i></a>
+       
+        
+
+    </div>
+ </div>
+ <!-- نهايه عنا -->
+    </header>
+    <!-- نهايه الرأس -->
+    <!-- بدايه الشغل -->
+    <section  class="project" id="projects">
+        <div class="texpro">
+<h1 data-aos="fade-down">project</h1>
+<h3 data-aos="fade-down">all projects</h3>
+</div>
+<div class="contact7">
+
+    <div class="item">
+        <img data-aos="fade-up" src="../img/pr1.png" alt="project one">
+    </div>
+   <div data-aos="fade-up" class="item"><img src="../img/pr1.png" alt="project tow"> </div>
+   <div  data-aos="fade-up" class="item"><img src="../img/pr1.png" alt="project three"> </div>
+   <div data-aos="fade-up" class="item"><img src="../img/pr1.png" alt="project for"></div>
+</div>
+    </section>
+
+
+    <section data-aos="fade-up" class="newproo">
+        <div class="item2"><img src="../img/weli.jpg" alt="project tow"></div>
+        <div class="item2"><img src="../img/weli.jpg" alt="project 4"></div>
+        <div class="item2"><img src="../img/weli.jpg" alt="project 3"></div>
+        <div class="item2"><img src="../img/weli.jpg" alt="project 2"></div>
+    </section>
+
+    <section  data-aos="fade-up" class="newproo">
+        <div class="item2"><img src="../img/weli.jpg" alt="project tow"></div>
+        <div class="item2"><img src="../img/weli.jpg" alt="project 4"></div>
+        <div class="item2"><img src="../img/weli.jpg" alt="project 3"></div>
+        <div class="item2"><img src="../img/weli.jpg" alt="project 2"></div>
+    </section>
+    <!-- نهايه الشغل -->
+    <section  class="contact" id="contact">  
+        <div  data-aos="flip-up" data-aos-delay="300" class="cont"> <h1>contact us</h1></div>
+        <div class="form">
+<form onsubmit="sendToTelegram(event)">
+  <input type="text" placeholder="name" id="name" required>
+  <input type="email" placeholder="email" id="email" required>
+  <textarea id="message" placeholder="message" required></textarea>
+  <button type="submit">send</button>
+</form>
+
+<script>
+function sendToTelegram(e) {
+  e.preventDefault(); // منع الفورم من إعادة تحميل الصفحة
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  const token = "8236383731:AAH8qV599isTYAGTxqVP_8dZ0pdkn1geu60"; // توكن البوت
+  const chatId = "5648582314"; // الشات آي دي بتاعك
+  const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+  const text = `📩 رسالة جديدة:\n\n👤 الاسم: ${name}\n📧 الايميل: ${email}\n💬 الرسالة: ${message}`;
+
+  fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text: text
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.ok) {
+      alert("✅ تم إرسال الرسالة بنجاح على تليجرام");
+    } else {
+      alert("❌ حصل خطأ، جرب تاني");
+      console.error(data);
+    }
+  })
+  .catch(err => {
+    alert("⚠️ مشكلة في الاتصال");
+    console.error(err);
+  });
+}
+</script>
+
+</div>
+    
+
+    </section>
+<!-- نهايه المحتوي  -->
+    <!-- بدايه النهايه -->
+    <footer class="footer">Abdelrhman Nabil</footer>
+    <!-- نهايه النهايه -->
+     <!-- كود حافا للتحريك -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <script>
+  AOS.init();
+</script>
+<!-- نهايه كود جافا -->
+</body>
+</html>
+
+
+

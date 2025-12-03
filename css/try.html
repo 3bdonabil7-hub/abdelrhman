@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CV</title>
+  <style>
+    /* --- RESET --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* --- HEADER --- */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    header nav a:hover {
+      color: #00bcd4;
+    }
+
+    /* --- HERO / PROFILE --- */
+    .hero {
+      text-align: center;
+      padding: 40px 0;
+    }
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .hero h1 {
+      margin-top: 15px;
+      font-size: 2rem;
+    }
+    .hero p {
+      color: #555;
+    }
+
+    /* --- ABOUT --- */
+    section {
+      padding: 40px 0;
+    }
+    .about {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .about img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    /* --- SKILLS --- */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .skills div {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* --- PROJECTS --- */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #00bcd4;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .card button:hover {
+      background: #008c9e;
+    }
+
+    /* --- CONTACT --- */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 10px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #555;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+      header nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <h2>My CV</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="img/abdelrhman.jpg"Profile Picture">
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Freelancer</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <img src="https://via.placeholder.com/200" alt="About Me">
+    <div>
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. I love coding, design, and creating new projects.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 style="text-align:center; margin-bottom:20px;">Skills</h2>
+    <div class="skills">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>React</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 style="text-align:center; margin-bottom:20px;">Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="img/pr1.png" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Short description of the project goes here.</p>
+        <button>Read More</button>
+      </div>
+      <div class="card">
+        <img src="img/pr1.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Short description of the project goes here.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 style="text-align:center; margin-bottom:20px;">Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

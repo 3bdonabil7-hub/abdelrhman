@@ -1,0 +1,419 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* start header */
+.header{
+  width: 100%;
+  height: 870px;
+   }
+
+  .navbar{
+    width: 100%;
+    height:10%;
+  
+    display: flex;
+}
+span{
+    color: rgb(52, 110, 81);
+}
+    
+    .logo{
+        width: 50%;
+        height: 100%;
+        /* background-color: royalblue; */
+        font-size: 40px;
+        padding: 10px 70px;
+         font-family: "Pacifico", cursive;
+         
+         
+    }
+    .about{
+        width: 100%;
+        height: 100%;
+        /* background-color: azure; */
+        display: flex;
+    }
+    .text{
+width: 50% ;
+height: 100%;
+text-transform: capitalize;
+  animation-name:slideInDown;
+  animation-duration: 1s;           
+  animation-fill-mode: both;        
+  animation-timing-function: ease
+
+    }
+    .text h1{
+        margin: 160px 0px 0px 60px;
+        font-size: 40px;
+        text-transform: capitalize;
+        font-family: "Unbounded", sans-serif;
+        text-align: left;
+          animation-name:slideInDown;
+  animation-duration: 1s;           
+  animation-fill-mode: both;        
+  animation-timing-function: ease
+        
+    }
+
+    .text h1::first-letter{
+        color: goldenrod;
+    }
+    .text h2{
+        text-align: left;
+        text-transform: capitalize;
+        font-family: "Lobster", sans-serif;
+        margin-top: 10px;
+        margin-left: 60px;
+  animation-name:slideInDown;
+  animation-duration: 1s;           
+  animation-fill-mode: both;        
+  animation-timing-function: ease
+    }
+    .text h3{
+         text-align: left;
+        text-transform: capitalize;
+        font-family: "Lobster", sans-serif;
+        margin-top: 10px;
+        margin-left: 60px;
+  animation-name:slideInDown;
+  animation-duration: 1s;           
+  animation-fill-mode: both;        
+  animation-timing-function: ease
+    }
+/* .text h4{
+    
+   font-family: "Aref Ruqaa Ink", serif;
+   margin: 30px 0px 10px 60px;
+   font-size: 20px;
+} */
+    .text a{
+        margin: 10px 0px 0px 50px;
+    }
+     
+  .text .fb{
+    font-size: 40px;
+        margin: 15px 0px 0px 60px;
+        color: rgb(134, 175, 238);
+        transition: 0.2s;
+   }
+   .fb:hover{
+    color: rgb(24, 88, 206);
+   }
+
+   .text .wa{
+    font-size: 40px;
+       margin: 30px 0px 0px 10px;
+        color: rgb(172, 228, 164);
+        transition: 0.2s;
+   }
+   .wa:hover{
+    color: rgb(0, 218, 47);
+   }
+    
+
+
+    /* photo */
+    .avatar{
+width: 50% ;
+height: 100%;
+/* background-color: blue; */
+    }
+    .avatar img{width: 50%;
+
+margin: 100px 60px;
+border-radius: 50%;
+box-shadow: slategray;
+animation-name: slideInDown;
+animation-duration: 0.8s;
+animation-fill-mode: both;
+animation-timing-function: ease;}
+
+             /* end header */
+
+            /* nav bar */
+    .nav{ width: 50%;
+        height: 100%;
+       
+
+
+    }
+
+    
+
+    .nav ul li{
+        float: left;
+        list-style-type: none;
+        margin: 30px 70px;
+
+    }
+
+    .nav ul li a{
+        text-decoration: none;
+    color: black;
+    font-family: "Unbounded", sans-serif;
+    font-size: 24px;
+    transition: 0.2s color;
+    
+}
+
+.nav ul li a:hover {
+        
+    color: rgb(70, 41, 236);
+}
+    /* end nav bar */
+
+    
+/* بدايه المشاريع  */
+
+.project{
+width:100%;
+height: 700px;
+background-color:rgb(232, 232, 232);
+text-align: center;
+font-family: "Pacifico", cursive;
+text-transform: capitalize;
+overflow: hidden;
+animation-name: slideInUp;
+animation-duration: 0.8s;
+animation-fill-mode: both;
+animation-timing-function: ease;}
+
+
+
+.texpro{
+    margin: 50px 0px;
+    height: 20%;
+}
+.texpro h1{
+    font-size: 60px;
+}
+
+
+.texpro h1::first-letter{
+    color: limegreen;}
+
+.contact7{
+    display: flex;
+    justify-content: space-around;
+    width:100% ;
+    height:80% ;
+animation-name: slideInUp;    
+animation-duration: 0.8s;
+animation-fill-mode: both;
+animation-timing-function: ease;}
+
+    /* background-color: blueviolet; */
+
+
+.item{
+    width:20%;
+    height:50%;
+    /* background-color: tomato;
+} */
+position: relative;
+
+}
+
+.item h2{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.item img{
+    width: 100%;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.item img:hover{
+    transform: scale(1.2,1.2);
+}
+
+.newproo{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    /* background-color: teal; */
+     justify-content:space-around;
+     flex-wrap: wrap;
+     align-items: center;
+     overflow: hidden;
+     margin-bottom: 30px;
+}
+.item2{
+    width:20%;
+    height:100%;
+    /* background-color: yellow; */
+}
+.item2 img{
+ width: 100%;
+ border-radius: 10px;
+}
+
+/* نهايه المشاريع  */
+
+/* بدايه الفورم */
+
+.contact{
+    width: 100%;
+    /* height: 400px; */
+    margin: 50px 0px 0px 0px;
+    animation-name: slideInUp;
+animation-duration: 0.8s;
+animation-fill-mode: both;
+animation-timing-function: ease;
+animation-timeline: view();
+  animation-range: entry 0% cover 30%;}
+
+.form input{
+    text-align:center;
+}
+.form textarea{
+    text-align: center;
+}
+button{
+    width:100%;
+    height: auto;
+    margin: auto;
+}
+    
+
+
+.cont h1{
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    text-transform: capitalize;
+    font-size: 50px;
+    padding-bottom: 20px;
+
+}
+
+
+.cont h1::first-letter{
+    color: limegreen;
+
+}
+.form{
+    width:600px;
+    height:100%;
+    /* background-color: black; */
+    margin: auto;
+    
+    
+    
+}
+input{
+    display: block;
+    width:100%;
+    height:40px;
+    margin: 10px 0px;
+    border-radius: 2px;
+}
+textarea{
+    width:100%;
+    height:200px;
+     border-radius: 2px;
+     margin-bottom: 10px;
+
+}
+
+button{
+    border: none;
+    background-color: rgb(99, 223, 126);
+    color: white;
+    padding: 10px 20px;
+}
+
+/* نهايه الفورم */
+
+/* بدايه النهاية  */
+
+.footer{
+    text-align: center;
+    text-transform: capitalize;
+   font-size: 30px;
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+     font-family: "Lobster", sans-serif;
+    
+}
+
+.footer::first-letter{
+    color: limegreen;
+}
+/* نهايه الخاتمه */
+@media (max-width: 768px) {
+  /* about section */
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .avatar img {
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+  }
+
+  .text h1 {
+    font-size: 26px;
+    margin: 15px 0;
+  }
+  .text h2,
+  .text h3 {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  .text .fb,
+  .text .wa {
+    font-size: 32px;
+    margin: 10px 8px;
+  }
+
+  /* projects */
+  .contact7 {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: auto;
+  }
+  .item {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  .newproo {
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+  }
+  .item2 {
+    width: 80%;
+  }
+
+  /* form */
+  .form {
+    width: 90%;
+  }
+  input, textarea, button {
+    font-size: 14px;
+  }
+
+  /* general spacing between sections */
+  .header,
+  .project,
+  .contact,
+  .footer {
+    padding: 20px 10px;
+    height: auto;
+  }
+}
