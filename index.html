@@ -5,49 +5,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Abdelrhman Nabil — Portfolio</title>
 
-  <!-- Font Awesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-<!-- Primary Meta Tags -->
-<title>Abdelrhman Nabil - Agricultural Engineering Student</title>
-<meta name="title" content="Abdelrhman Nabil - Agricultural Engineering Student">
-<meta name="description" content="Abdelrhman Nabil, a passionate Agricultural Engineering student dedicated to modern farming, smart agriculture techniques, and sustainable crop production. Explore my portfolio, projects, and contact information.">
-
-<!-- Open Graph / Facebook / WhatsApp -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://3bdelrhman.site/">
-<meta property="og:title" content="Abdelrhman Nabil - Agricultural Engineering Student">
-<meta property="og:description" content="Portfolio of Abdelrhman Nabil, a student in the Faculty of Agricultural Engineering passionate about smart farming and innovative agricultural solutions.">
-<meta property="og:image" content="https://3bdelrhman.site/abdelrhman.jpg">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://3bdelrhman.site/">
-<meta property="twitter:title" content="Abdelrhman Nabil - Agricultural Engineering Student">
-<meta property="twitter:description" content="Explore Abdelrhman Nabil's portfolio — Agricultural Engineering student focusing on modern farming technologies and sustainable agriculture.">
-<meta property="twitter:image" content="https://3bdelrhman.site/abdelrhman.jpg">
-
-<!-- Extra SEO -->
-<meta name="keywords" content="Abdelrhman Nabil, Agricultural Engineering, Agriculture Student, Smart Farming, Portfolio, Engineering Student">
-<meta name="author" content="Abdelrhman Nabil">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0e1117">
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="ChatGPT Image Dec 4, 2025, 12_39_05 PM.png">
-<link rel="apple-touch-icon" href="ChatGPT Image Dec 4, 2025, 12_39_05 PM.png">
-
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header class="site-header animate" data-delay="0.05">
-    <!-- <h1 class="logo">Abdelrhman <span class="gold-box">Nabil</span></h1> -->
 
+<body>
+
+  <header class="site-header animate" data-delay="0.05">
     <div class="header-controls">
       <div class="lang-switch">
         <button id="langToggle" aria-label="Switch language">EN | AR</button>
@@ -58,7 +27,6 @@
 
   <main class="main">
 
-    <!-- HERO -->
     <section class="hero card animate" data-delay="0.1">
       <div class="left">
         <p class="badge" data-i18n="badge">Student — Faculty of Agricultural Engineering</p>
@@ -77,12 +45,13 @@
           <p><strong data-i18n="locationLabel">Location:</strong> <span data-i18n="locationValue">(Ashmoun)</span></p>
         </div>
 
-        <!-- social icons (colored, bigger) -->
         <div class="socials">
-          <!-- <a class="social insta" href="#" id="insta" aria-label="Instagram"><i class="fab fa-instagram"></i></a> -->
-          <a class="social whats" href="https://wa.me/201098540553" id="whats" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-          <a class="social face" href="https://www.facebook.com/abdelrhman.nabil.768972" id="face" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-          <!-- <a class="social linkd" href="#" id="linkd" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+          <a class="social whats" href="https://wa.me/201098540553" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a class="social face" href="https://www.facebook.com/abdelrhman.nabil.768972" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
         </div>
       </div>
 
@@ -103,16 +72,12 @@
       </aside>
     </section>
 
-    <!-- CONTACT FORM: placed LAST -->
     <section id="contact" class="card contact-section animate" data-delay="0.25">
       <h3 data-i18n="contactTitle">Write your message</h3>
       <p class="muted" data-i18n="contactMuted">Type a message and it will be sent to Abdelrhman Nabil</p>
 
       <form id="tgForm" class="tg-form" novalidate>
-        <label for="senderName" class="sr-only" data-i18n="senderLabel">Sender name (optional)</label>
         <input type="text" id="senderName" placeholder="Your name (optional)">
-
-        <label for="messageText" class="sr-only" data-i18n="messageLabel">Message</label>
         <textarea id="messageText" placeholder="Type your message..." required></textarea>
 
         <div class="form-actions">
@@ -122,16 +87,17 @@
           </button>
         </div>
 
-        <p id="status" class="status" role="status" aria-live="polite"></p>
+        <p id="status" class="status"></p>
       </form>
     </section>
 
   </main>
 
   <footer class="site-footer muted animate" data-delay="0.3">
-    © <span id="year"></span> <span data-i18n="footerName">Abdelrhman Nabil</span>
+    © <span id="year"></span> Abdelrhman Nabil
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
